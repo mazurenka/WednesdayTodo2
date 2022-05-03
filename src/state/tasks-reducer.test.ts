@@ -73,7 +73,7 @@ test('new property with new array should be added when new todolist is added', (
     expect(endState[newKey]).toStrictEqual([]);
 });
 
-test('propertry with todolistId should be deleted', () => {
+test('property with todolistId should be deleted', () => {
     const action = removeTodolistAC("todolistId2");
     const endState = tasksReducer(startState, action)
 
